@@ -54,7 +54,7 @@
   right: 11vw;
   top: 18.3vw;  
   font-family: Maladroit;
-  font-size: 1.15vw;
+  font-size: 1.2vw;
   line-height: 1.4;
 
 
@@ -64,7 +64,7 @@
     right: 8.9vw;
     top: 51vw;
     font-size: 4vw;
-    line-height: 1.2;
+    line-height: 1.15;
     text-align: center;
   }
 }
@@ -152,7 +152,7 @@
   color: #fff;
   margin-bottom: 32px;
   padding-left: 70px;
-  font-size: 1.15vw;
+  font-size: 1.2vw;
 
   @media (max-width: 1300px) {
     margin-top: 5vw;
@@ -164,7 +164,7 @@
 
   @include m {
     text-align: center;
-    margin-top: 8vw;
+    margin-top: 12vw;
     padding-right: 0px;
     padding-left: 0;
     margin-bottom: 16px;
@@ -185,7 +185,7 @@
   
   @include m {
     text-align: center;
-    margin-top: 18vw;
+    margin-top: 22vw;
     padding-right: 0px;
     padding-left: 0;
     margin-bottom: 16px;
