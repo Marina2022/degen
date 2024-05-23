@@ -2,7 +2,7 @@ import s from './Vision.module.scss';
 
 const Vision = ({lang}) => {
   return (
-      <div className={s.visionBlock}>
+      <div className={lang === 'en' ?  s.visionBlock : s.visionBlockRu}>
 
         <div className={s.textBlock}>
           {

@@ -1,0 +1,44 @@
+@import "@/mixins";
+
+.degen {
+  width: 100vw;
+  height: 46.875vw;
+  background: url(/src/assets/img/degenomics/bg-en.png) no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @include m {
+    height: 227.9vw;
+    background: url('@/assets/img/degenomics/bg-en-mobile.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.degenRu {
+  width: 100vw;
+  height: 46.875vw;
+  background: url('@/assets/img/degenomics/bg-ru.png') no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @include m {
+    height: 227.9vw;
+    background: url('@/assets/img/degenomics/bg-ru-mobile.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.degenLabel {
+
+  display: none;
+  @include m {
+    display: block;
+    width: 91vw;
+    position: absolute;
+    left: 4.8vw;
+    top: 11vw;
+    height: 17vw;
+    background: url(/src/assets/img/degenomics/DegenText.png) no-repeat;
+    background-size: cover;
+  }
+}

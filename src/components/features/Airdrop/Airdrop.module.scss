@@ -1,9 +1,9 @@
 @import "@/mixins";
 
 .airdropBlock {
-  width: 100%;
+  width: 100vw;
   height: 137.7vw;
-  background: url('@/assets/img/airdrop/bg.png') no-repeat;
+  background: url('@/assets/img/airdrop/bg-en.png') no-repeat;
   background-size: cover;
   position: relative;
 
@@ -11,5 +11,181 @@
     height: 352.79vw;
     background: url('@/assets/img/airdrop/bg-mobile.png') no-repeat;
     background-size: cover;
+  }
+}
+
+.airdropBlockRu {
+  width: 100vw;
+  height: 137.7vw;
+  background: url('@/assets/img/airdrop/bg-ru.png') no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @include m {
+    height: 352.79vw;
+    background: url('@/assets/img/airdrop/bg-mobile-ru.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.botBtnEn {
+  position: absolute;
+  width: 15.6vw;
+  height: 6.66vw;
+  left: 41.9vw;
+  top: 79.6vw;
+  background-image: url('@/assets/img/airdrop/botBtnEn.png');
+  background-size: cover;
+
+  @include m {
+    width: 67vw;
+    height: 25vw;
+    left: 16.9vw;
+    top: 135.6vw;
+
+    background-image: url('@/assets/img/airdrop/botBtnMobileEn.png');
+    background-size: cover;
+  }
+}
+
+.botBtnRu {
+  width: 15.6vw;
+  height: 6.66vw;
+  position: absolute;
+  left: 41.9vw;
+  top: 79.6vw;
+  background-image: url('@/assets/img/airdrop/botBtnRu.png');
+  background-size: cover;
+
+  @include m {
+    width: 56.6vw;
+    height: 24.7vw;
+    left: 22.7vw;
+    top: 135.6vw;
+    background-size: cover;
+  }
+}
+
+
+.label1 {
+  display: none;
+  
+  @include m {
+    display: block;
+    width: 97.4vw;
+    text-align: center;
+    font-family: SharkSoftBites;
+    font-size: 4.5vw;
+    line-height: 1.3;
+    position: absolute;
+    top: 122.3vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+.label2 {
+  display: none;
+
+  @include m {
+    display: block;    
+    text-align: center;
+    font-family: SharkSoftBites;
+    position: absolute;
+    width: 18.7vw;
+    line-height: 1.1;
+    bottom: 101.3vw;
+    left: 14vw;
+    font-size: 2.5vw;
+    line-height: 1.2;    
+  }
+}
+
+.label3 {
+  display: none;
+
+  @include m {
+    display: block;
+    text-align: center;
+    font-family: SharkSoftBites;
+    position: absolute;
+    width: 22.7vw;
+    line-height: 1.1;
+    bottom: 96.3vw;
+    left: 45.6vw;
+    font-size: 2.5vw;
+    line-height: 1.2;
+  }
+}
+
+
+.label4 {
+  display: none;
+
+  @include m {
+    display: block;
+    text-align: center;
+    font-family: SharkSoftBites;
+    position: absolute;
+    width: 22.7vw;
+    line-height: 1.1;
+    bottom: 67.9vw;
+    left: 19.6vw;
+    font-size: 2.5vw;
+    line-height: 1.2;
+  }
+}
+
+
+.label5 {
+  display: none;
+
+  @include m {
+    display: block;
+    text-align: center;
+    font-family: SharkSoftBites;
+    position: absolute;
+    width: 26vw;
+    line-height: 1.1;
+    bottom: 63.4vw;
+    left: 54.4vw;
+    font-size: 2.5vw;
+    line-height: 1.2;
+  }
+}
+
+
+.label6 {
+  display: none;
+
+  @include m {
+    display: block;
+    text-align: center;
+    font-family: SharkSoftBites;
+    position: absolute;
+    width: 33vw;
+    line-height: 1.1;
+    bottom: 40.5vw;
+    left: 17.4vw;
+    font-size: 2.5vw;
+    line-height: 1.2;
+  }
+}
+
+.label7 {
+  display: none;
+
+  @include m {
+    display: block;
+    text-align: center;
+    font-family: SharkSoftBites;
+    position: absolute;
+    width: 33vw;
+    line-height: 1.1;
+    bottom: 33.5vw;
+    left: 58.4vw;
+    font-size: 2.5vw;
+    line-height: 1.2;
   }
 }

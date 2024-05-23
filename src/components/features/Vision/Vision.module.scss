@@ -1,16 +1,49 @@
 @import "@/mixins";
 
 .visionBlock {
+   width: 100%;
+   height: 62.5vw;
+   background: url('@/assets/img/vision/bg.png') no-repeat;
+   background-size: cover;
+   position: relative;
+
+   @include m {
+     height: 187.64vw;
+     background: url('@/assets/img/vision/bg-mobile-en.png') no-repeat;
+     background-size: cover;
+   }
+ }
+
+
+.visionBlockRu {
   width: 100%;
   height: 62.5vw;
-  background: url('@/assets/img/vision/bg.png') no-repeat;
+  background: url('@/assets/img/vision/bg-ru.png') no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative;  
 
   @include m {
     height: 187.64vw;
-    background: url('@/assets/img/vision/bg-mobile.png') no-repeat;
-    background-size: cover;
+    background: url('@/assets/img/vision/bg-mobile-ru.png') no-repeat;
+    background-size: cover; 
+    
+  }
+  
+  &:after {
+    display: none;
+    
+    @include m {
+      content: "";
+      display: block;      
+      background: url(/src/assets/img/vision/mission.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 85vw;
+      height: 26vw;
+      top: 18.37vw;
+      left: 5.58vw;
+    }
   }
 }
 
