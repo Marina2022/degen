@@ -1,0 +1,15 @@
+@import "@/mixins";
+
+.airdropBlock {
+  width: 100%;
+  height: 137.7vw;
+  background: url('@/assets/img/airdrop/bg.png') no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @include m {
+    height: 352.79vw;
+    background: url('@/assets/img/airdrop/bg-mobile.png') no-repeat;
+    background-size: cover;
+  }
+}
