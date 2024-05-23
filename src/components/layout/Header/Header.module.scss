@@ -1,0 +1,63 @@
+@import '@/mixins.scss';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 160px;
+  z-index: 1;
+
+  @include m {
+    padding-inline: 20px;
+    height: 90px;
+  }
+}
+
+.logo {
+  font-family: Maladroit;
+  font-size: 32px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+
+  @include m {
+    font-size: 18px;
+    gap: 6px;
+  }
+
+  img {
+    max-width: 100%;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.rightHeaderMenu {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  @include m {
+    gap: 6px;
+  }
+}
+
+.socialLink {
+  cursor: pointer;
+
+  @include m {
+    width: 32px;
+    height: 32px;
+    display: block;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+

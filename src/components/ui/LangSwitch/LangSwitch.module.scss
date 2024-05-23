@@ -1,0 +1,13 @@
+@import '@/mixins.scss';
+
+.switch {
+  img {
+    max-width: 100%;
+  }
+  
+  @include m {
+    width: 63px;
+    height: 32px;
+  }
+  
+}

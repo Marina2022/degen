@@ -1,0 +1,48 @@
+@import "@/mixins";
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0, .4);
+} 
+
+.modal {
+  width: 600px;
+  min-height: 200px;
+  background: white;
+  color: #242424;
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  border-radius: 16px;
+  
+  @include m {
+    max-width: 92%;
+    padding: 30px;
+    font-size: 18px;
+  }
+}
+
+.closeBtn {
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+.botBtn {
+  background: url('@/assets/img/hero/botBtn.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
