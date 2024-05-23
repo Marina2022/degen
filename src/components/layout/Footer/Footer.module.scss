@@ -12,7 +12,7 @@
     height: 100.23vw;
     background: url('@/assets/img/footer/bg-en-mobile.png') no-repeat;
     background-size: cover;
-  } 
+  }
 }
 
 .footerRu {
@@ -36,22 +36,38 @@
   position: absolute;
   bottom: 2.4vw;
   left: 39vw;
-  
+
   img {
     width: 10.052vw;
     height: 10.052vw;
   }
-  
-  @include m {
 
+  @include m {
     gap: 5.116vw;
     bottom: 15vw;
     left: 23.9vw;
-  
+
     img {
       width: 26.28vw;
       height: 26.28vw;
     }
   }
-  
 }
+
+
+.footerLabel {
+  display: none;
+
+  @include m {
+    display: block;
+    width: 91vw;
+    position: absolute;
+    left: 4.8vw;
+    top: 23vw;
+    height: 22.5vw;
+    background: url(/src/assets/img/footer/text-ru-mobile3.svg) no-repeat;
+    background-size: cover;
+  
+  }
+}
+

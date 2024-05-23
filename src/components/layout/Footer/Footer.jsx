@@ -14,6 +14,10 @@ const Footer = ({lang}) => {
           </a>
         </div>
 
+        {
+            lang === 'ru' && <div className={s.footerLabel}></div>
+        }
+
       </footer>
   );
 };
