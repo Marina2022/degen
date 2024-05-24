@@ -1,0 +1,242 @@
+@import "@/mixins";
+
+.startScreen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background: url('@/assets/img/startScreen/bg.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  
+  opacity: 1;
+  
+  @include m {
+    background: url('@/assets/img/startScreen/bg-mobile.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.bgMerry {
+  width: 100vw;
+  height: 100vh;
+  background: url('@/assets/img/startScreen/bg-merry.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0; 
+
+  @include m {
+    background: url('@/assets/img/startScreen/bg-merry-mobile.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.bgSad {
+  width: 100vw;
+  height: 100vh;
+  background: url('@/assets/img/startScreen/bg-sad.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+
+  @include m {
+    background: url('@/assets/img/startScreen/bg-sad-mobile.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+.person {
+  background: url('@/assets/img/startScreen/person1.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-52%);
+  width: 54.69vw;
+  height: 31.09vw;
+  
+  @include m {
+    background: url('@/assets/img/startScreen/person1-mobile.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 141.86vw;
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.personMerry {
+  background: url('@/assets/img/startScreen/merryPerson.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-52%);
+  width: 35vw;
+  height: 31.09vw;
+
+  @include m {
+    background: url('@/assets/img/startScreen/merryPerson-mobile.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 141.86vw;
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+
+.personSad {
+  background: url('@/assets/img/startScreen/sadPerson.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-52%);
+  width:35vw;
+  height: 31.09vw;
+
+  @include m {
+    background: url('@/assets/img/startScreen/sadPerson-mobile.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 141.86vw;
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.buyBtn {
+  width: 15.62vw;
+  height: 6.66vw;
+  background: url('@/assets/img/startScreen/BuyBtn-en.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 22.52vw;
+  bottom: 13.5vw;
+  
+  @include m {
+    width: 47.74vw;
+    height: 20.59vw;
+    bottom: unset;
+    top: 57vw ;
+    left: 1.5vw;    
+  }
+}
+
+.buyBtnRu {
+  width: 15.62vw;
+  height: 6.66vw;
+  background: url('@/assets/img/startScreen/BuyBtn-empty.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  
+  left: 22.52vw;
+  bottom: 13.5vw;
+  
+  font-family: SharkSoftBites;
+  color: white;
+  -webkit-text-stroke: 0.12vw #000; 
+  text-stroke: 0.12vw #000;
+  font-weight: bold;
+  font-size: 2.2vw;
+
+  @include m {
+    width: 47.74vw;
+    height: 20.59vw;
+    bottom: unset;
+    top: 57vw ;
+    left: 1.5vw;
+    font-size: 7.6vw;
+  }
+}
+
+.sellBtn {
+  width: 15.62vw;
+  height: 6.66vw;
+  background: url(/src/assets/img/startScreen/SellBtn-en.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 13.5vw;
+  right: 22.52vw;
+
+  @include m {
+    width: 47.74vw;
+    height: 20.59vw;
+    bottom: unset;
+    top: 57vw ;
+    right: 2vw;
+    
+  }
+}
+
+.sellBtnRu {
+  width: 15.62vw;
+  height: 6.66vw;
+  background: url(/src/assets/img/startScreen/SellBtn-empty.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 22.52vw;
+  bottom: 13.5vw;
+  font-family: SharkSoftBites;
+  color: white;
+  -webkit-text-stroke: 0.12vw #000;
+  text-stroke: 0.12vw #000;
+  font-weight: bold;
+  font-size: 2.2vw;
+
+  @include m {
+    width: 47.74vw;
+    height: 20.59vw;
+    bottom: unset;
+    top: 57vw ;
+    right: 2vw;
+    font-size: 7.6vw;
+  }
+}
+
+
+.pressBtn {
+  width: 28.96vw;
+  height: 4.9vw;
+  background: url(/src/assets/img/startScreen/PressBtnEn.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 9.82vw;
+  bottom: 0.7vw;
+  
+  @include m {
+    width: 87.9vw;
+    height: 14.88vw;
+    right: 2.82vw;
+  }
+}
+
+.pressBtnRu {
+  width: 28.96vw;
+  height: 4.9vw;
+  background: url(/src/assets/img/startScreen/PressBtnEmpty.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 9.82vw;
+  bottom: 0.7vw;
+  font-family: SharkSoftBites;
+  color: white;  
+  font-size: 1.5vw;
+
+
+  @include m {
+    width: 87.9vw;
+    height: 14.88vw;
+    right: 2.82vw;
+    font-size: 4.5vw;
+  }
+}
