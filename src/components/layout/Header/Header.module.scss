@@ -12,9 +12,12 @@
   padding-inline: 160px;
   z-index: 1;
 
+  @media (max-width: 1000px) {
+    padding-inline: 60px;
+  }
+  
   @include m {
     padding-inline: 20px;
-    height: 90px;
   }
 }
 
@@ -50,14 +53,35 @@
 .socialLink {
   cursor: pointer;
 
+  width: 2.92vw;
+  height: 2.92vw;
+  
+  img {
+    max-width: 100%;
+  }
+  //
+  //@media (max-width: 1000px) {
+  //  width: 4.92vw;
+  //  height: 4.92vw;
+  //}
+
   @include m {
     width: 32px;
     height: 32px;
     display: block;
-
-    img {
-      max-width: 100%;
-    }
+ 
   }
 }
 
+
+
+.switchWrapper {
+  width: 5.83vw;
+  height: 2.92vw;
+  
+  @include m {
+    width: unset;
+    height: unset;
+  }
+  
+}
