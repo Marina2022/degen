@@ -11,22 +11,17 @@ const Header = ({lang, setLang}) => {
           <img src={logo} alt="logo"/>
           <span>$DEGEN</span>
         </div>
-
         <div className={s.rightHeaderMenu}>
           <a className={s.socialLink} href="https://x.com/TonDegeneration" target="_blank">
             <img src={twitterIcon} alt="twitter"/>
-
           </a>
           <a className={s.socialLink} href="https://t.me/TonDegeneration" target="_blank">
             <img src={telegramIcon} alt="telegram"/>
           </a>
-
           <div className={s.switchWrapper}>
             <LangSwitch lang={lang} setLang={setLang}/>
           </div>
-
         </div>
-
       </header>
   );
 };

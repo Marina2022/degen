@@ -3,8 +3,7 @@ import langRu from '@/assets/img/lang/langRu.svg'
 import langEn from '@/assets/img/lang/langEn.svg'
 
 const LangSwitch = ({lang, setLang}) => {
-  
-  const clickHandler = () => {
+    const clickHandler = () => {
     if (lang === 'ru') {
       setLang('en')
     } else {
@@ -19,7 +18,6 @@ const LangSwitch = ({lang, setLang}) => {
               ? <img src={langEn} alt="language"/>
               : <img src={langRu} alt="language"/>
         }
-
       </div>
   );
 };

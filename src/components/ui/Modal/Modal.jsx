@@ -1,6 +1,5 @@
 import s from './Modal.module.scss';
 import {useEffect} from "react";
-
 const Modal = ({children, setIsOpen, isOpen}) => {
   
   useEffect(()=>{
@@ -13,7 +12,7 @@ const Modal = ({children, setIsOpen, isOpen}) => {
 
     return ()=> {
       window.removeEventListener('keydown', escHandler)
-    }    
+    }  
     
   },[])
   

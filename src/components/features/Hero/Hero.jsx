@@ -1,7 +1,6 @@
 import s from './Hero.module.scss';
 import {useState} from "react";
 import Modal from "@/components/ui/Modal/Modal.jsx";
-
 const Hero = ({lang}) => {
   
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -26,10 +25,14 @@ const Hero = ({lang}) => {
           </div>
         </div>
         
-        <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}>The token will be available for sale soon, but in the meantime you can start farming it through our bot!</Modal>
+        <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}>
+          {
+            lang === 'en' ?
+                <span>The token will be available for sale soon, but in the meantime you can start farming it through our bot!</span>
+                : <span style={{fontFamily: 'SharkSoftBites'}}>Токен скоро появится в продаже, а пока вы можете начать его фармить через нашего бота!</span>
+          }
+        </Modal>
       </div>
-
-
   );
 };
 

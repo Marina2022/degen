@@ -14,7 +14,6 @@
    }
  }
 
-
 .visionBlockRu {
   width: 100%;
   height: 62.5vw;
@@ -25,8 +24,7 @@
   @include m {
     height: 187.64vw;
     background: url('@/assets/img/vision/bg-mobile-ru.png') no-repeat;
-    background-size: cover; 
-    
+    background-size: cover;     
   }
   
   &:after {
@@ -57,7 +55,6 @@
   font-size: 1.2vw;
   line-height: 1.4;
 
-
   @include m {
     width: 83.2vw;
     height: 88vw;
@@ -84,9 +81,7 @@
   @include m {
     margin-bottom: 16px;
   }
-
 }
-
 
 .firstPar {
   margin-bottom: 32px;
@@ -134,7 +129,6 @@
   padding-left: 70px;
   margin-bottom: 32px;
   font-family: SharkSoftBites;
-
 
   @media (max-width: 1300px) {
     margin-bottom: 22px;

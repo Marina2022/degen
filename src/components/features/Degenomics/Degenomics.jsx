@@ -1,5 +1,4 @@
 import s from './Degenomics.module.scss';
-
 const Degenomics = ({lang}) => {
   return (
       <div className={lang === 'en' ? s.degen : s.degenRu }>
@@ -9,5 +8,4 @@ const Degenomics = ({lang}) => {
       </div>
   );
 };
-
 export default Degenomics;

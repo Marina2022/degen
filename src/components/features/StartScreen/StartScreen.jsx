@@ -1,26 +1,23 @@
 import s from './StartScreen.module.scss';
 import {useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
-
 const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
-
   const [mood, setMood] = useState('neutral')
-
   const buyHandler = () => {
     console.log('ya')
     setMood('merry')
 
     setTimeout(() => {
       setShowStartScreen(false)
+      localStorage.setItem('userIsNew', 'no')
     }, 2000)
-
   }
-
   const sellHandler = () => {
     console.log('ya')
     setMood('sad')
     setTimeout(() => {
       setShowStartScreen(false)
+      localStorage.setItem('userIsNew', 'no')
     }, 2000)
   }
 
@@ -29,7 +26,6 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
         <AnimatePresence>
           <motion.div
               key={3}
-              // initial={{opacity: 0}}
               animate={{opacity: 1}}
               exit={{opacity: 0}}
 
@@ -81,7 +77,7 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
 
             {
                 mood === 'merry' && <motion.div
-                    key={1}
+                    key={6}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}

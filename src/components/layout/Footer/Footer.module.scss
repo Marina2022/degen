@@ -1,7 +1,6 @@
 @import "@/mixins";
 
 .footer {
-
   width: 100vw;
   height: 46.875vw;
   background: url(/src/assets/img/footer/bg-en.png) no-repeat;
@@ -54,7 +53,6 @@
   }
 }
 
-
 .footerLabel {
   display: none;
 
@@ -65,9 +63,8 @@
     left: 4.8vw;
     top: 23vw;
     height: 22.5vw;
-    background: url(/src/assets/img/footer/text-ru-mobile3.svg) no-repeat;
-    background-size: cover;
-  
+    background: url(/src/assets/img/footer/text-ru-mobile.svg) no-repeat;
+    background-size: cover;  
   }
 }
 

@@ -92,7 +92,6 @@
   }
 }
 
-
 .personSad {
   background: url('@/assets/img/startScreen/sadPerson.png') no-repeat;
   background-size: cover;
@@ -137,11 +136,9 @@
   height: 6.66vw;
   background: url('@/assets/img/startScreen/BuyBtn-empty.png') no-repeat;
   background-size: cover;
-  position: absolute;
-  
+  position: absolute;  
   left: 22.52vw;
-  bottom: 13.5vw;
-  
+  bottom: 13.5vw;  
   font-family: SharkSoftBites;
   color: white;
   -webkit-text-stroke: 0.12vw #000; 
@@ -202,7 +199,6 @@
     font-size: 7.6vw;
   }
 }
-
 
 .pressBtn {
   width: 28.96vw;

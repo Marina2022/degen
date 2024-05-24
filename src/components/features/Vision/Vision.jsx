@@ -53,7 +53,6 @@ const Vision = ({lang}) => {
           }
 
         </div>
-
       </div>
   );
 };

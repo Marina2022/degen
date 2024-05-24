@@ -7,7 +7,6 @@ import Footer from "@/components/layout/Footer/Footer.jsx";
 
 const MainPage = ({lang, showStartScreen}) => {
 
-
   return (
       <AnimatePresence>
         {
@@ -28,7 +27,6 @@ const MainPage = ({lang, showStartScreen}) => {
             </motion.div>
         }
       </AnimatePresence>
-
   );
 };
 
