@@ -55,7 +55,6 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
                 ></motion.div>
             }
 
-
             {
                 mood === 'sad' && <motion.div
                     className={s.bgSad}

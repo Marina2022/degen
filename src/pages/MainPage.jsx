@@ -4,7 +4,6 @@ import Vision from "@/components/features/Vision/Vision.jsx";
 import Airdrop from "@/components/features/Airdrop/Airdrop.jsx";
 import Degenomics from "@/components/features/Degenomics/Degenomics.jsx";
 import Footer from "@/components/layout/Footer/Footer.jsx";
-
 const MainPage = ({lang, showStartScreen}) => {
 
   return (

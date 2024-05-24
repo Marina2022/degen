@@ -3,13 +3,13 @@
 .airdropBlock {
   width: 100vw;
   height: 137.7vw;
-  background: url('@/assets/img/airdrop/bg-en.png') no-repeat;
+  background: url('@/assets/img/airdrop/bg-en.jpg') no-repeat;
   background-size: cover;
   position: relative;
 
   @include m {
     height: 352.79vw;
-    background: url('@/assets/img/airdrop/bg-mobile.png') no-repeat;
+    background: url('@/assets/img/airdrop/bg-mobile.jpg') no-repeat;
     background-size: cover;
   }
 }
@@ -17,13 +17,13 @@
 .airdropBlockRu {
   width: 100vw;
   height: 137.7vw;
-  background: url('@/assets/img/airdrop/bg-ru.png') no-repeat;
+  background: url('@/assets/img/airdrop/bg-ru.jpg') no-repeat;
   background-size: cover;
   position: relative;
 
   @include m {
     height: 352.79vw;
-    background: url('@/assets/img/airdrop/bg-mobile-ru.png') no-repeat;
+    background: url('@/assets/img/airdrop/bg-mobile-ru.jpg') no-repeat;
     background-size: cover;
   }
 }
