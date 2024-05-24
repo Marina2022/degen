@@ -12,12 +12,10 @@ const MainPage = ({lang, showStartScreen}) => {
       <AnimatePresence>
         {
             !showStartScreen && <motion.div
-
                 key={33}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 exit={{opacity: 0}}
-
                 transition={{
                   duration: 1
                 }}

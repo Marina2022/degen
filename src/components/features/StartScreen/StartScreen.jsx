@@ -81,7 +81,7 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
 
             {
                 mood === 'merry' && <motion.div
-                    key={2}
+                    key={1}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}
@@ -94,7 +94,7 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
 
             {
                 mood === 'sad' && <motion.div
-                    key={2}
+                    key={5}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}

@@ -127,7 +127,7 @@
     width: 47.74vw;
     height: 20.59vw;
     bottom: unset;
-    top: 57vw ;
+    top: 27vh ;
     left: 1.5vw;    
   }
 }
@@ -153,7 +153,7 @@
     width: 47.74vw;
     height: 20.59vw;
     bottom: unset;
-    top: 57vw ;
+    top: 27vh ;
     left: 1.5vw;
     font-size: 7.6vw;
   }
@@ -172,7 +172,7 @@
     width: 47.74vw;
     height: 20.59vw;
     bottom: unset;
-    top: 57vw ;
+    top: 27vh ;
     right: 2vw;
     
   }
@@ -197,7 +197,7 @@
     width: 47.74vw;
     height: 20.59vw;
     bottom: unset;
-    top: 57vw ;
+    top: 27vh ;
     right: 2vw;
     font-size: 7.6vw;
   }
@@ -216,7 +216,7 @@
   @include m {
     width: 87.9vw;
     height: 14.88vw;
-    right: 2.82vw;
+    right: 2.82vw;  
   }
 }
 
@@ -238,5 +238,8 @@
     height: 14.88vw;
     right: 2.82vw;
     font-size: 4.5vw;
+    display: flex;
+    padding-left: 4vw;
+    align-items: center;
   }
 }
