@@ -1,7 +1,7 @@
 @import '@/mixins.scss';
 
 .hero {
-  background: url('../../../assets/img/hero/hero-bg.png');
+  background: url('../../../assets/img/hero/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;  
   height: 52vw;
@@ -32,8 +32,10 @@
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat ;
+  z-index: 2;
 
-  @include m {     
+  @include m {
+    z-index: 2;
     background-repeat: no-repeat;
     background-size: cover;
     width: 54.69vw;
@@ -41,10 +43,12 @@
     height: 23.75vw;
     top: 148vw;
     left: 24vw;
+    
   }  
 }
 
 .buyTokenBtnRu {
+  z-index: 200;
   background: url('../../../assets/img/hero/buyTokenBtnRu.png');
   background-size: contain;
   background-repeat: no-repeat ;
@@ -96,4 +100,39 @@
   font-size: 24px;
   margin-bottom: 10px;
   padding-left: 20px  ;
+}
+
+.frog {
+  position: absolute;
+  left: 8.8vw;
+  bottom: 6.2vw;
+  width: 7.76vw;
+  height: 13.2vw;
+  background: url('@/assets/img/hero/frog.png');
+  background-size: cover;
+  
+  @include m {
+    left: 65.8vw;
+    bottom: 75vw;
+    width: 23.46vw;
+    height: 39.1vw;    
+  }
+}
+
+.person {
+  display: none;
+  
+  @include m {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    bottom: -0.1vw;
+    left: 0vw;
+    width: 100vw;
+    height: 129vw;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('@/assets/img/hero/person+.png');
+  }
 }

@@ -10,7 +10,18 @@ const Hero = ({lang}) => {
   
   return (
       <div>
-        <div className={s.hero}>          
+        <div className={s.hero}>
+         
+          <div className={s.twitterFeed}>
+            <h2 className={s.twitterHeader}>x nEWS</h2>
+            <iframe src='https://fc907e2a9c34413eb0c239f1b782edf8.elf.site' width='100%' height='750'
+                    frameBorder='0'></iframe>
+          </div>
+          <div className={s.frog}></div>
+          
+          
+          <div className={s.person}></div>
+
           {
               lang === 'ru' && <button onClick={clickHandler} className={s.buyTokenBtnRu}></button>
           }
@@ -18,13 +29,9 @@ const Hero = ({lang}) => {
               lang === 'en' && <button onClick={clickHandler} className={s.buyTokenBtnEn}></button>
           }
 
-          <div className={s.twitterFeed}>
-            <h2 className={s.twitterHeader}>x nEWS</h2>
-            <iframe src='https://fc907e2a9c34413eb0c239f1b782edf8.elf.site' width='100%' height='750'
-                    frameBorder='0'></iframe>
-          </div>
+
         </div>
-        
+
         <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}>
           {
             lang === 'en' ?
