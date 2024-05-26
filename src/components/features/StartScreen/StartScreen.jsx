@@ -4,7 +4,7 @@ import {AnimatePresence, motion} from "framer-motion";
 const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
   const [mood, setMood] = useState('neutral')
   const buyHandler = () => {
-    console.log('ya')
+    setShowButtons(false)
     setMood('merry')
 
     setTimeout(() => {
@@ -13,13 +13,15 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
     }, 2000)
   }
   const sellHandler = () => {
-    console.log('ya')
+    setShowButtons(false)
     setMood('sad')
     setTimeout(() => {
       setShowStartScreen(false)
       localStorage.setItem('userIsNew', 'no')
     }, 2000)
   }
+  
+  const [showButtons, setShowButtons] = useState(true)
 
   return (
       showStartScreen && <div>
@@ -69,7 +71,6 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
                 ></motion.div>
             }
 
-
             {
                 mood === 'neutral' && <div className={s.person}></div>
             }
@@ -102,27 +103,27 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
 
 
             {
-                lang === 'en' && <button className={s.buyBtn} onClick={buyHandler}></button>
+                lang === 'en' && showButtons && <button className={s.buyBtn} onClick={buyHandler}></button>
             }
             {
-                lang === 'ru' && <button className={s.buyBtnRu} onClick={buyHandler}>Купить</button>
-            }
-
-            {
-                lang === 'en' && <button className={s.sellBtn} onClick={sellHandler}></button>
+                lang === 'ru' && showButtons && <button className={s.buyBtnRu} onClick={buyHandler}>Купить</button>
             }
 
             {
-                lang === 'ru' && <button className={s.sellBtnRu} onClick={sellHandler}>Продать</button>
+                lang === 'en' && showButtons && <button className={s.sellBtn} onClick={sellHandler}></button>
+            }
+
+            {
+                lang === 'ru' && showButtons && <button className={s.sellBtnRu} onClick={sellHandler}>Продать</button>
             }
 
 
             {
-                lang === 'en' && <div className={s.pressBtn}></div>
+                lang === 'en' && showButtons && <div className={s.pressBtn}></div>
             }
 
             {
-                lang === 'ru' && <div className={s.pressBtnRu}>Нажмите любую кнопку, чтобы продолжить</div>
+                lang === 'ru' && showButtons && <div className={s.pressBtnRu}>Нажмите любую кнопку, чтобы продолжить</div>
             }
 
 

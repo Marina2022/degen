@@ -4,7 +4,7 @@ const Vision = ({lang}) => {
   return (
       <div className={lang === 'en' ?  s.visionBlock : s.visionBlockRu}>
 
-        <div className={s.textBlock}>
+        <div className={lang === 'en' ? s.textBlock : s.textBlockRu}>
           {
               lang == 'en' && <p className={s.firstPar}>
                 As true $DEGENs, we deeply value our community. Your support is crucial to our success, and we are committed

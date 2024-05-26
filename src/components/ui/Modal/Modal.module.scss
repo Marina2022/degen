@@ -1,12 +1,14 @@
 @import "@/mixins";
 
 .overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: rgba(0,0,0, .4);
+  z-index: 1;
 } 
 
 .modal {
+  z-index: 1;
   width: 600px;
   min-height: 200px;
   background: white;

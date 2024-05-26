@@ -1,38 +1,38 @@
 @import "@/mixins";
 
 .visionBlock {
-   width: 100%;
-   height: 62.5vw;
-   background: url('@/assets/img/vision/bg.jpg') no-repeat;
-   background-size: cover;
-   position: relative;
+  width: 100%;
+  height: 62.5vw;
+  background: url('@/assets/img/vision/bg.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
 
-   @include m {
-     height: 187.64vw;
-     background: url('@/assets/img/vision/bg-mobile-en.png') no-repeat;
-     background-size: cover;
-   }
- }
+  @include m {
+    height: 187.64vw;
+    background: url('@/assets/img/vision/bg-mobile-en.png') no-repeat;
+    background-size: cover;
+  }
+}
 
 .visionBlockRu {
   width: 100%;
   height: 62.5vw;
   background: url('@/assets/img/vision/bg-ru.jpg') no-repeat;
   background-size: cover;
-  position: relative;  
+  position: relative;
 
   @include m {
     height: 187.64vw;
     background: url('@/assets/img/vision/bg-mobile-ru.png') no-repeat;
-    background-size: cover;     
+    background-size: cover;
   }
-  
+
   &:after {
     display: none;
-    
+
     @include m {
       content: "";
-      display: block;      
+      display: block;
       background: url(/src/assets/img/vision/mission.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -50,10 +50,31 @@
   width: 41.5vw;
   height: 26vw;
   right: 11vw;
-  top: 18.3vw;  
+  top: 18.3vw;
   font-family: Maladroit;
   font-size: 1.2vw;
   line-height: 1.4;
+
+  @include m {
+    width: 83.2vw;
+    height: 88vw;
+    right: 8.9vw;
+    top: 51vw;
+    font-size: 3.9vw;
+    line-height: 1.15;
+    text-align: center;
+  }
+}
+
+.textBlockRu {
+  position: absolute;
+  width: 41.5vw;
+  height: 26vw;
+  right: 11vw;
+  top: 18.7vw;
+  font-family: Maladroit;
+  font-size: 1.35vw;
+  line-height: 1.3;
 
   @include m {
     width: 83.2vw;
@@ -67,15 +88,15 @@
 }
 
 .firstPar {
-  margin-bottom: 32px;
-  
+  margin-bottom: 1.7vw;
+
   @include m {
     font-size: 3.9vw;
   }
 }
 
 .firstParRu {
-  margin-bottom: 32px;
+  margin-bottom: 1.4vw;
   font-family: SharkSoftBites;
 
   @include m {
@@ -84,11 +105,7 @@
 }
 
 .firstPar {
-  margin-bottom: 32px;
-  
-  @media (max-width: 1300px) {
-    margin-bottom: 22px;
-  }
+  margin-bottom: 1.7vw;
 
   @include m {
     margin-bottom: 16px;
@@ -96,44 +113,32 @@
 }
 
 .firstParRu {
-  margin-bottom: 32px;
+  margin-bottom: 1vw;
   font-family: SharkSoftBites;
 
-
-  @media (max-width: 1300px) {
-    margin-bottom: 22px;
-  }
-  
   @include m {
     margin-bottom: 16px;
   }
 }
 
 .nextPar {
-  margin-bottom: 32px;
-  padding-left: 70px;
+  margin-bottom: 1.7vw;
+  padding-left: 4.6vw;
 
-  @media (max-width: 1300px) {
-    margin-bottom: 22px;
-  }
 
   @include m {
     padding-left: 0;
     margin-bottom: 16px;
     font-size: 3.9vw;
-    
   }
 }
 
 .nextParRu {
-  padding-left: 70px;
-  margin-bottom: 32px;
+  padding-left: 4.6vw;
+  margin-bottom: 1vw;
   font-family: SharkSoftBites;
 
-  @media (max-width: 1300px) {
-    margin-bottom: 22px;
-  }
-  
+
   @include m {
     padding-left: 0;
     margin-bottom: 16px;
@@ -141,48 +146,51 @@
 }
 
 .lastPar {
-  margin-top: 7vw;
-  padding-right: 50px;
   color: #fff;
-  margin-bottom: 32px;
-  padding-left: 70px;
   font-size: 1.2vw;
+  position: absolute;
+  left: 2vw;
+  bottom: -9.3vw;
+  left: 5vw;
+  width: 34vw;
 
-  @media (max-width: 1300px) {
-    margin-top: 5vw;
-  }
-  @media (max-width: 1000px) {
-    margin-top: 3.5vw;
-    margin-bottom: 22px;
-  }
 
   @include m {
     text-align: center;
-    margin-top: 12vw;
-    padding-right: 0px;
-    padding-left: 0;
-    margin-bottom: 16px;
-    font-size: 3.9vw;
+    color: #fff;
+    font-size: 1.2vw;
+    position: absolute;
+    left: 2vw;
+    bottom: -30.3vw;
+    left: 0vw;
+    width: 81.2vw;
+    font-size: 3.5vw;
+    line-height: 1.3;
   }
 }
 
 .lastParRu {
-  margin-top: 10.7vw;
-  padding-right: 50px;  
+
+  position: absolute;
+  bottom: 20vw;
+  left: 2vw;
+  bottom: -9vw;
+  left: 5vw;
+  width: 29vw;
   color: #fff;
-  padding-left: 70px;
   font-family: SharkSoftBites;
 
-  @media (max-width: 1500px) {
-    margin-top: 7vw;
-  }
-  
+
   @include m {
     text-align: center;
-    margin-top: 22vw;
-    padding-right: 0px;
-    padding-left: 0;
-    margin-bottom: 16px;
-    font-size: 3.9vw;
+    color: #fff;
+    font-size: 1.2vw;
+    position: absolute;
+    left: 2vw;
+    bottom: -28.9vw;
+    left: 0vw;
+    width: 81.2vw;
+    font-size: 3.6vw;
+    line-height: 1.4;
   }
 }

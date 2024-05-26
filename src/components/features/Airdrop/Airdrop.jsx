@@ -36,7 +36,7 @@ const Airdrop = ({lang}) => {
         }
 
         {
-            lang === 'ru' && <div className={s.label7}>Запуск самой дегенеративного лаунчпада на TON</div>
+            lang === 'ru' && <div className={s.label7}>Запуск самого дегенеративного лаунчпада на TON</div>
         }
 
       </div>

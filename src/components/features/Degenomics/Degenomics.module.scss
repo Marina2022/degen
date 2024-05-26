@@ -29,15 +29,22 @@
 }
 
 .degenLabel {
-  display: none;
+  background: url(/src/assets/img/degenomics/DegenText+.png) no-repeat;
+  display: block;
+  width: 28.5vw;
+  position: absolute;
+  left: 13.8vw;
+  top: 2vw;
+  height: 5.4vw;
+  background-size: cover;
+  
   @include m {
     display: block;
     width: 91vw;
     position: absolute;
     left: 4.8vw;
     top: 11vw;
-    height: 17vw;
-    background: url(/src/assets/img/degenomics/DegenText.png) no-repeat;
+    height: 17vw;    
     background-size: cover;
   }
 }
