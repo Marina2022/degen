@@ -36,6 +36,11 @@
   top: 79.6vw;
   background-image: url('@/assets/img/airdrop/botBtnEn.png');
   background-size: cover;
+  transition: transform ease-out .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @include m {
     width: 67vw;
@@ -44,6 +49,10 @@
     top: 135.6vw;
     background-image: url('@/assets/img/airdrop/botBtnMobileEn.png');
     background-size: cover;
+
+    &:hover {
+      transform: scale(1);
+    }
   }
 }
 
@@ -55,6 +64,11 @@
   top: 79.6vw;
   background-image: url('@/assets/img/airdrop/botBtnRu.png');
   background-size: cover;
+  transition: transform ease-out .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @include m {
     width: 56.6vw;
@@ -62,6 +76,10 @@
     left: 22.7vw;
     top: 135.6vw;
     background-size: cover;
+
+    &:hover {
+      transform: scale(1);
+    }
   }
 }
 

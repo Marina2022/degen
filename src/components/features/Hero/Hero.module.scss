@@ -1,13 +1,48 @@
 @import '@/mixins.scss';
 
+@keyframes frog {
+  0% {
+    transform: rotate(0deg);
+  }
+  33.3% {
+    transform: rotate(-7deg);
+  }
+  66.6% {
+    transform: rotate(7deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes letter {
+  0% {
+    transform: rotate(0deg);
+  }
+  33.3% {
+    transform: rotate(7deg);
+  }
+  66.6% {
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
 .hero {
   background: url('../../../assets/img/hero/hero-bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;
   height: 52vw;
   width: 100%;
   position: relative;
   
+
   @include m {
     background: url('../../../assets/img/hero/hero-bg-mobile.png');
     background-repeat: no-repeat;
@@ -22,7 +57,7 @@
   background-size: contain;
   position: absolute;
   top: 386px;
-  top: 27vw;  
+  top: 27vw;
   left: 21vw;
   width: 300px;
   width: 15.6vw;
@@ -31,8 +66,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
   z-index: 2;
+  transition: transform ease-out .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @include m {
     z-index: 2;
@@ -43,15 +83,19 @@
     height: 23.75vw;
     top: 148vw;
     left: 24vw;
-    
-  }  
+
+    &:hover {
+      transform: scale(1);
+    }
+
+  }
 }
 
 .buyTokenBtnRu {
   z-index: 200;
   background: url('../../../assets/img/hero/buyTokenBtnRu.png');
   background-size: contain;
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
   position: absolute;
   top: 386px;
   top: 27vw;
@@ -63,18 +107,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform ease-out .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   
+
   @include m {
-    @include m {
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 54.69vw;
-      height: 14.65vw;
-      height: 23.75vw;
-      top: 148vw;
-      left: 24vw;     
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 54.69vw;
+    height: 14.65vw;
+    height: 23.75vw;
+    top: 148vw;
+    left: 24vw;
+
+    &:hover {
+      transform: scale(1);
     }
   }
+
 }
 
 .twitterFeed {
@@ -82,13 +135,13 @@
   right: 5.3vw;
   top: 7vw;
   width: 22vw;
-  height: 34vw;  
-  z-index: 1;
-  
+  height: 34vw;
+  z-index: 4;
+
   @media(max-width: 1340px) {
     top: 11.6vw;
-  }  
-  
+  }
+
   @include m {
     display: none;
   }
@@ -99,40 +152,87 @@
   font-family: Maladroit;
   font-size: 24px;
   margin-bottom: 10px;
-  padding-left: 20px  ;
+  padding-left: 20px;
 }
 
 .frog {
   position: absolute;
   left: 8.8vw;
-  bottom: 6.2vw;
+  bottom: 6.3vw;
   width: 7.76vw;
   height: 13.2vw;
   background: url('@/assets/img/hero/frog.png');
   background-size: cover;
-  
+  animation: frog 11s ease-out infinite;
+
   @include m {
     left: 65.8vw;
     bottom: 75vw;
     width: 23.46vw;
-    height: 39.1vw;    
+    height: 39.1vw;
   }
 }
 
 .person {
-  display: none;
-  
+  z-index: 2;
+  background-size: contain;
+  position: absolute;
+  bottom: 0vw;
+  left: 14.2vw;
+  width: 100vw;
+  height: 46.4875vw;
+  background-repeat: no-repeat;
+  background-image: url('@/assets/img/hero/person-desktop.png');
+
   @include m {
     display: block;
-    z-index: 2;
     position: absolute;
     bottom: -0.1vw;
     left: 0vw;
     width: 100vw;
     height: 129vw;
-    
+
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('@/assets/img/hero/person+.png');
   }
+}
+
+.letter {
+  width: 20.83vw;
+  height: 27.08vw;
+  position: absolute;
+  top: 5.15vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  animation: frog 11s ease-out infinite;
+}
+
+.letter1 {
+  left: 2vw;
+  background-image: url('@/assets/img/hero/letters/letter-1.png');
+}
+
+.letter2 {
+  animation: letter 11s ease-out infinite;
+  left: 11vw;
+  background-image: url('@/assets/img/hero/letters/letter-2.png');
+}
+
+.letter3 {
+  left: 20vw;
+  background-image: url('@/assets/img/hero/letters/letter-3.png');
+}
+
+.letter4 {
+  animation: letter 11s ease-out infinite;
+  left: 29vw;
+  background-image: url('@/assets/img/hero/letters/letter-4.png');
+}
+
+.letter5 {
+  left: 37vw;
+  background-image: url('@/assets/img/hero/letters/letter-5.png');
+  z-index: 0;
 }

@@ -16,9 +16,9 @@
     padding-inline: 60px;
     height: 90px;
   }
-  
+
   @include m {
-    padding-inline: 20px;    
+    padding-inline: 20px;
   }
 }
 
@@ -28,8 +28,8 @@
   gap: 16px;
   display: flex;
   align-items: center;
-  
-  
+
+
   @include m {
     font-size: 18px;
     gap: 6px;
@@ -39,7 +39,7 @@
     max-width: 100%;
     width: 4.69vw;
     height: 4.69vw;
-    
+
     @include m {
       width: 32px;
       height: 32px;
@@ -59,10 +59,11 @@
 
 .socialLink {
   cursor: pointer;
-
   width: 2.92vw;
   height: 2.92vw;
-  
+  background-repeat: no-repeat;
+  background-size: contain;
+
   img {
     max-width: 100%;
   }
@@ -74,12 +75,41 @@
   }
 }
 
+
+.twitterLink {
+  background-image: url(@/assets/img/header/socialIcons/Twitter.svg);
+  
+  &:hover {
+    background-image: url(@/assets/img/header/socialIcons/TwitterHover.svg);
+  }
+
+  @include m {
+    &:hover {
+      background-image: url(@/assets/img/header/socialIcons/Twitter.svg);
+    }
+  }
+}
+
+.telegramLink {
+  background-image: url(@/assets/img/header/socialIcons/Telegram.svg);
+  &:hover {
+    background-image: url(@/assets/img/header/socialIcons/TelegramHover.svg);
+  }
+  
+  @include m {
+    &:hover {
+      background-image: url(@/assets/img/header/socialIcons/Telegram.svg);
+    } 
+  }
+}
+
 .switchWrapper {
   width: 5.83vw;
   height: 2.92vw;
-  
+
   @include m {
     width: unset;
     height: unset;
-  }  
+  }
 }
+
