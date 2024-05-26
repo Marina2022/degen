@@ -207,6 +207,10 @@
   background-repeat: no-repeat;
   z-index: 0;
   animation: frog 11s ease-out infinite;
+  
+  @include m {
+    display: none;
+  }
 }
 
 .letter1 {
@@ -235,4 +239,57 @@
   left: 37vw;
   background-image: url('@/assets/img/hero/letters/letter-5.png');
   z-index: 0;
+}
+
+.leftEye {
+  width: 3.0833vw;
+  height: 1.659vw;
+  
+  position: absolute;
+  top: 15.9vw;
+  left: 50vw;
+  z-index: 4;
+  
+  @include m {
+    width: 6.48vw;
+    height: 4.759vw;
+    position: absolute;
+    top: 70.9vw;
+    left: 33.1vw;
+    z-index: 4;
+  }
+  
+  img {
+    width: 76%;
+    height: 100%;
+    object-fit: contain;
+    display:  block;
+  }
+}
+
+.rightEye {
+  width: 3vw;
+  height: 1.8vw;
+  
+  position: absolute;
+  top: 15.5vw;
+  left: 56.3vw;
+  z-index: 4;
+
+  @include m {
+    width: 6.68vw;
+    height: 5.659vw;
+    position: absolute;
+    top: 69.9vw;
+    left: 45.8vw;
+    z-index: 4;
+  }
+  
+  img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display:  block;
+  }
 }

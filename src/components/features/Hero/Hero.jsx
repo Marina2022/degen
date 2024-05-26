@@ -1,6 +1,11 @@
 import s from './Hero.module.scss';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Modal from "@/components/ui/Modal/Modal.jsx";
+
+import leftEyeOpen from '@/assets/img/hero/eyes/left-eye-open.png'
+import rightEyeOpen from '@/assets/img/hero/eyes/right-eye-open.png'
+import leftEyeClosed from '@/assets/img/hero/eyes/left-eye-close.png'
+import rightEyeClosed from '@/assets/img/hero/eyes/right-eye-close.png'
 
 const Hero = ({lang}) => {
 
@@ -8,6 +13,24 @@ const Hero = ({lang}) => {
   const clickHandler = () => {
     setIsModalOpen(true)
   }
+
+  const [eyesAreOpen, setEyesAreOpen] = useState(true)
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setEyesAreOpen(false)
+      setTimeout(() => {
+        setEyesAreOpen(true)
+      }, 100)
+    }, 11000)
+
+    return () => {
+      clearInterval(id)
+    }
+
+  }, []);
+
+  // console.log({eyesAreOpen})
 
   return (
       <div>
@@ -25,7 +48,7 @@ const Hero = ({lang}) => {
           <div className={`${s.letter} ${s.letter3}`}></div>
           <div className={`${s.letter} ${s.letter4}`}></div>
           <div className={`${s.letter} ${s.letter5}`}></div>
-          
+
 
           <div
               className={s.frog}>
@@ -33,6 +56,13 @@ const Hero = ({lang}) => {
 
 
           <div className={s.person}></div>
+
+          <div className={s.leftEye}>
+            <img src={eyesAreOpen ? leftEyeOpen : leftEyeClosed} alt="left eye"/> 
+          </div>
+          <div className={s.rightEye}>
+            <img src={eyesAreOpen ? rightEyeOpen : rightEyeClosed} alt="right eye"/>
+          </div>
 
           {
               lang === 'ru' && <button onClick={clickHandler} className={s.buyTokenBtnRu}></button>
