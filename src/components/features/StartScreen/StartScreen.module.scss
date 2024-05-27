@@ -1,19 +1,35 @@
 @import "@/mixins";
 
+@keyframes person {
+  0% {
+    //transform: translateX(-52%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-52%) rotate(-5deg);
+  }
+ 100% {
+    transform: translateX(-52%) rotate(5deg);
+    
+  }
+  //
+  //100% {
+  //  transform: translateX(-52%) rotate(0deg);
+  //}
+}
+
 .startScreen {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
+
 .bg {
-  width: 100vw;
-  height: 100vh;
+  
   background: url('@/assets/img/startScreen/bg.jpg') no-repeat;
   background-size: cover;
   position: absolute;
-  inset: 0;
-  
+  inset: 0;  
   opacity: 1;
   
   @include m {
@@ -50,18 +66,19 @@
   }
 }
 
-.person {
-  background: url('@/assets/img/startScreen/person1.png') no-repeat;
+.person1 {
+  background: url(/src/assets/img/startScreen/person1-1.png) no-repeat;
   background-size: cover;
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: -0vw;
+  left: 52%;
   transform: translateX(-52%);
-  width: 54.69vw;
+  width: 44.49vw;
   height: 31.09vw;
-  
+
+
   @include m {
-    background: url('@/assets/img/startScreen/person1-mobile.png') no-repeat;
+    background: url('@/assets/img/startScreen/person1-1mobile.png') no-repeat;
     background-size: contain;
     background-position: bottom;
     height: 141.86vw;
@@ -71,8 +88,31 @@
   }
 }
 
-.personMerry {
-  background: url('@/assets/img/startScreen/merryPerson.png') no-repeat;
+.person2 {
+  background: url(/src/assets/img/startScreen/person1-2.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0vw;
+  left: 52%;
+  transform: translateX(-52%);
+
+  width: 44.49vw;
+  height: 31.09vw;
+
+  
+  @include m {
+    background: url('@/assets/img/startScreen/person1-2mobile.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 141.86vw;
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.personMerry1 {
+  background: url('@/assets/img/startScreen/merryPerson-1.png') no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -82,7 +122,7 @@
   height: 31.09vw;
 
   @include m {
-    background: url('@/assets/img/startScreen/merryPerson-mobile.png') no-repeat;
+    background: url('@/assets/img/startScreen/merryPerson-1-mobile.png') no-repeat;
     background-size: contain;
     background-position: bottom;
     height: 141.86vw;
@@ -92,8 +132,30 @@
   }
 }
 
-.personSad {
-  background: url('@/assets/img/startScreen/sadPerson.png') no-repeat;
+
+.personMerry2{
+  background: url('@/assets/img/startScreen/merryPerson-2.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-52%);
+  width: 35vw;
+  height: 31.09vw;
+
+  @include m {
+    background: url('@/assets/img/startScreen/merryPerson-2-mobile.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 141.86vw;
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.personSad1 {
+  background: url('@/assets/img/startScreen/sadPerson-1.png') no-repeat;
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -103,7 +165,28 @@
   height: 31.09vw;
 
   @include m {
-    background: url('@/assets/img/startScreen/sadPerson-mobile.png') no-repeat;
+    background: url('@/assets/img/startScreen/sadPerson-1-mobile.png') no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 141.86vw;
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.personSad2 {
+  background: url('@/assets/img/startScreen/sadPerson-2.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-52%);
+  width:35vw;
+  height: 31.09vw;
+
+  @include m {
+    background: url('@/assets/img/startScreen/sadPerson-2-mobile.png') no-repeat;
     background-size: contain;
     background-position: bottom;
     height: 141.86vw;
@@ -120,14 +203,23 @@
   background-size: cover;
   position: absolute;
   left: 22.52vw;
-  bottom: 13.5vw;
-  
+  bottom: 13.5vw;  
+  transition: transform ease-out .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
   @include m {
     width: 47.74vw;
     height: 20.59vw;
     bottom: unset;
     top: 27vh ;
-    left: 1.5vw;    
+    left: 1.5vw;
+    
+    &:hover {
+      transform: scale(1);
+    }
   }
 }
 
@@ -145,6 +237,11 @@
   text-stroke: 0.12vw #000;
   font-weight: bold;
   font-size: 2.2vw;
+  transition: transform ease-out .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @include m {
     width: 47.74vw;
@@ -153,6 +250,10 @@
     top: 27vh ;
     left: 1.5vw;
     font-size: 7.6vw;
+
+    &:hover {
+      transform: scale(1);
+    }
   }
 }
 
@@ -164,6 +265,11 @@
   position: absolute;
   bottom: 13.5vw;
   right: 22.52vw;
+  transition: transform ease-out .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @include m {
     width: 47.74vw;
@@ -171,7 +277,10 @@
     bottom: unset;
     top: 27vh ;
     right: 2vw;
-    
+
+    &:hover {
+      transform: scale(1);
+    }    
   }
 }
 
@@ -189,6 +298,11 @@
   text-stroke: 0.12vw #000;
   font-weight: bold;
   font-size: 2.2vw;
+  transition: transform ease-out .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @include m {
     width: 47.74vw;
@@ -197,6 +311,10 @@
     top: 27vh ;
     right: 2vw;
     font-size: 7.6vw;
+
+    &:hover {
+      transform: scale(1);
+    }
   }
 }
 

@@ -33,14 +33,14 @@
   width: 15.6vw;
   height: 6.66vw;
   left: 41.9vw;
-  top: 79.6vw;
+  top: 80vw;
   background-image: url('@/assets/img/airdrop/botBtnEn.png');
   background-size: cover;
   transition: transform ease-out .3s;
 
   &:hover {
     transform: scale(1.05);
-  }
+  }  
 
   @include m {
     width: 67vw;
@@ -53,7 +53,9 @@
     &:hover {
       transform: scale(1);
     }
+    
   }
+  
 }
 
 .botBtnRu {
@@ -61,7 +63,7 @@
   height: 6.66vw;
   position: absolute;
   left: 41.9vw;
-  top: 79.6vw;
+  top: 80vw;
   background-image: url('@/assets/img/airdrop/botBtnRu.png');
   background-size: cover;
   transition: transform ease-out .3s;
@@ -101,7 +103,15 @@
 }
 
 .label2 {
-  display: none;
+  text-align: center;
+  font-family: SharkSoftBites;
+  position: absolute;
+  width: 7.8vw;
+  line-height: 1.1;
+  bottom: 19.2vw;
+  left: 19.8vw;
+  font-size: 1vw;
+  line-height: 1.5;
 
   @include m {
     display: block;    
@@ -110,7 +120,6 @@
     position: absolute;
     width: 18.7vw;
     line-height: 1.1;
-
     bottom: 98.9vw;
     left: 14vw;
     font-size: 2.7vw;
@@ -119,15 +128,22 @@
 }
 
 .label3 {
-  display: none;
+  text-align: center;
+  font-family: SharkSoftBites;
+  position: absolute;
+  width: 10.7vw;
+  line-height: 1.1;
+  bottom: 5.2vw;
+  left: 24.5vw;
+  font-size: 1vw;
+  line-height: 1.5;
 
   @include m {
     display: block;
     text-align: center;
     font-family: SharkSoftBites;
     position: absolute;
-    width: 22.7vw;
-    line-height: 1.1;
+    width: 22.7vw;    
     bottom: 94.6vw;
     left: 45.6vw;    
     font-size: 2.7vw;
@@ -136,15 +152,21 @@
 }
 
 .label4 {
-  display: none;
+  text-align: center;
+  font-family: SharkSoftBites;
+  position: absolute;
+  width: 7.8vw;
+  bottom: 11.9vw;
+  left: 40.5vw;
+  font-size: 1vw;
+  line-height: 1.5;
 
   @include m {
     display: block;
     text-align: center;
     font-family: SharkSoftBites;
     position: absolute;
-    width: 22.7vw;
-    line-height: 1.1;
+    width: 22.7vw;    
     bottom: 66.1vw;
     left: 19.6vw;
     font-size: 2.7vw;
@@ -152,16 +174,22 @@
   }
 }
 
-.label5 {
-  display: none;
+.label5 {  
+    text-align: center;
+    font-family: SharkSoftBites;
+    position: absolute;
+    width: 22.8vw;
+    bottom: 25.4vw;
+    left: 49.8vw;
+    font-size: 1vw;
+    line-height: 1.5;  
 
   @include m {
     display: block;
     text-align: center;
     font-family: SharkSoftBites;
     position: absolute;
-    width: 26vw;
-    line-height: 1.1;
+    width: 26vw;    
     bottom: 62.1vw;
     left: 54.4vw;
     font-size: 2.7vw;
@@ -170,15 +198,21 @@
 }
 
 .label6 {
-  display: none;
+  text-align: center;
+  font-family: SharkSoftBites;
+  position: absolute;
+  width: 9.8vw;
+  bottom: 6.8vw;
+  left: 51.3vw;
+  font-size: 1vw;
+  line-height: 1.5;
 
   @include m {
     display: block;
     text-align: center;
     font-family: SharkSoftBites;
     position: absolute;
-    width: 33vw;
-    line-height: 1.1;
+    width: 33vw;    
     bottom: 38.5vw;
     left: 17.4vw;
     font-size: 2.7vw;
@@ -187,16 +221,22 @@
 }
 
 .label7 {
-  display: none;
+  text-align: center;
+  font-family: SharkSoftBites;
+  position: absolute;
+  width: 12.8vw;
+  bottom: 9.9vw;
+  left: 64.3vw;
+  font-size: 1vw;
+  line-height: 1.5;
 
   @include m {
     display: block;
     text-align: center;
     font-family: SharkSoftBites;
     position: absolute;
-    width: 33vw;
-    line-height: 1.1;
-    bottom: 30.8vw;
+    width: 33vw;    
+    bottom: 33.5vw;
     left: 58.4vw;
     font-size: 2.7vw;
     line-height: 1.4;

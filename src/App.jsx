@@ -1,6 +1,6 @@
 import './App.scss'
 import MainPage from "@/pages/MainPage.jsx";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import StartScreen from "@/components/features/StartScreen/StartScreen.jsx";
 import Header from "@/components/layout/Header/Header.jsx";
 
