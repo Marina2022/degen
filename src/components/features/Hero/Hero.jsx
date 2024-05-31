@@ -27,10 +27,7 @@ const Hero = ({lang}) => {
     return () => {
       clearInterval(id)
     }
-
-  }, []);
-
-  // console.log({eyesAreOpen})
+  }, []); 
 
   return (
       <div>
@@ -49,11 +46,9 @@ const Hero = ({lang}) => {
           <div className={`${s.letter} ${s.letter4}`}></div>
           <div className={`${s.letter} ${s.letter5}`}></div>
 
-
           <div
               className={s.frog}>
           </div>
-
 
           <div className={s.person}></div>
 

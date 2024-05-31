@@ -10,8 +10,7 @@ function App() {
   const [showStartScreen, setShowStartScreen] = useState(()=>{
     if (localStorage.getItem('userIsNew') === 'no') return false
     return true
-  })
- 
+  }) 
 
   return (
       <>

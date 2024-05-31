@@ -5,12 +5,10 @@ import Airdrop from "@/components/features/Airdrop/Airdrop.jsx";
 import Degenomics from "@/components/features/Degenomics/Degenomics.jsx";
 import Footer from "@/components/layout/Footer/Footer.jsx";
 import s from  './MainPage.module.scss'
-
 const MainPage = ({lang, showStartScreen}) => {
 
   return (
       <div className={s.wrapper}>
-
         <AnimatePresence>
           {
               !showStartScreen && <motion.div

@@ -52,10 +52,8 @@
 
     &:hover {
       transform: scale(1);
-    }
-    
-  }
-  
+    }    
+  }  
 }
 
 .botBtnRu {
@@ -108,10 +106,10 @@
   position: absolute;
   width: 7.8vw;
   line-height: 1.1;
-  bottom: 19.2vw;
-  left: 19.8vw;
-  font-size: 1vw;
-  line-height: 1.5;
+  bottom: 19.9vw;
+  left: 20.3vw;
+  font-size: 1.2vw;
+  line-height: 1.2;
 
   @include m {
     display: block;    
@@ -131,12 +129,12 @@
   text-align: center;
   font-family: SharkSoftBites;
   position: absolute;
-  width: 10.7vw;
+  width: 11.7vw;
   line-height: 1.1;
-  bottom: 5.2vw;
-  left: 24.5vw;
-  font-size: 1vw;
-  line-height: 1.5;
+  bottom: 5.6vw;
+  left: 23.5vw;
+  font-size: 1.2vw;
+  line-height: 1.2;
 
   @include m {
     display: block;
@@ -155,11 +153,11 @@
   text-align: center;
   font-family: SharkSoftBites;
   position: absolute;
-  width: 7.8vw;
-  bottom: 11.9vw;
-  left: 40.5vw;
-  font-size: 1vw;
-  line-height: 1.5;
+  width: 9.8vw;
+  bottom: 12.2vw;
+  left: 39vw;
+  font-size: 1.2vw;
+  line-height: 1.2;
 
   @include m {
     display: block;
@@ -179,10 +177,10 @@
     font-family: SharkSoftBites;
     position: absolute;
     width: 22.8vw;
-    bottom: 25.4vw;
+  bottom: 25.4vw; 
     left: 49.8vw;
-    font-size: 1vw;
-    line-height: 1.5;  
+    font-size: 1.2vw;
+    line-height: 1.2;  
 
   @include m {
     display: block;
@@ -201,11 +199,11 @@
   text-align: center;
   font-family: SharkSoftBites;
   position: absolute;
-  width: 9.8vw;
-  bottom: 6.8vw;
-  left: 51.3vw;
-  font-size: 1vw;
-  line-height: 1.5;
+  width: 11.8vw;
+  bottom: 7vw;
+  left: 50.4vw;
+  font-size: 1.2vw;
+  line-height: 1.2;
 
   @include m {
     display: block;
@@ -224,11 +222,11 @@
   text-align: center;
   font-family: SharkSoftBites;
   position: absolute;
-  width: 12.8vw;
-  bottom: 9.9vw;
-  left: 64.3vw;
-  font-size: 1vw;
-  line-height: 1.5;
+  width: 10.3vw;
+  bottom: 8.9vw;
+  left: 65.3vw;
+  font-size: 1.2vw;
+  line-height: 1.2;
 
   @include m {
     display: block;

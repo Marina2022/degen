@@ -12,7 +12,7 @@ const Airdrop = ({lang}) => {
         }
         
         {
-            lang === 'ru' && <div className={s.label1}>Получите $DEGEN дроп, тапая по экранчику и приглашая своих друзей</div>
+            // lang === 'ru' && <div className={s.label1}>Получите $DEGEN дроп, тапая по экранчику и приглашая своих друзей++++</div>
         }
         
         {
@@ -24,19 +24,19 @@ const Airdrop = ({lang}) => {
         }
         
         {
-            lang === 'ru' && <div className={s.label4}>Листинг на DEX биржах</div>
+            lang === 'ru' && <div className={s.label4}>Листинг на DEX и стейкинг</div>
         }
         
         {
-            lang === 'ru' && <div className={s.label5}>Дроп $DEGEN токенов для настоящих дегенов</div>
+            lang === 'ru' && <div className={s.label5}>Дроп $DEGEN для настоящих дегенов</div>
         }
         
         {
-            lang === 'ru' && <div className={s.label6}>Дроп коллекции Degen NFT аватарок для держателей $DEGEN</div>
+            lang === 'ru' && <div className={s.label6}>Дроп коллекции DEGEN NFT аватарок для $DEGEN китов</div>
         }
         
         {
-            lang === 'ru' && <div className={s.label7}>Запуск самого дегенеративного лаунчпада на TON</div>
+            lang === 'ru' && <div className={s.label7}>Запуск самого дегенского лаунчпада на TON</div>
         }
 
       </div>

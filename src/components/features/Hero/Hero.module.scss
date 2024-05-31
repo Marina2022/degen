@@ -16,7 +16,6 @@
   }
 }
 
-
 @keyframes letter {
   0% {
     transform: rotate(0deg);
@@ -32,7 +31,6 @@
     transform: rotate(0deg);
   }
 }
-
 
 .hero {
   background: url('../../../assets/img/hero/hero-bg.jpg');
@@ -87,7 +85,6 @@
     &:hover {
       transform: scale(1);
     }
-
   }
 }
 
@@ -112,7 +109,6 @@
   &:hover {
     transform: scale(1.05);
   }
-  
 
   @include m {
     background-repeat: no-repeat;
@@ -127,7 +123,6 @@
       transform: scale(1);
     }
   }
-
 }
 
 .twitterFeed {
@@ -191,7 +186,6 @@
     left: 0vw;
     width: 100vw;
     height: 129vw;
-
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('@/assets/img/hero/person+.png');

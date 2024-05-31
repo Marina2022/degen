@@ -95,7 +95,6 @@ const StartScreen = ({lang, setShowStartScreen, showStartScreen}) => {
                       mood === 'neutral' && !person && <div className={s.person2}></div>
                   }
 
-
                   {
                       mood === 'merry' && person && <motion.div
                           key={6}
